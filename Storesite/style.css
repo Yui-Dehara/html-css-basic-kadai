@@ -1,0 +1,209 @@
+html {
+  font-size: 100%;
+}
+body {
+  font-family: Arial、Hiragino Sans、Hiragino Kaku Gothic ProN、Meiryo、sans-serif;
+  font-size: 0.875rem;
+  color: #24292E;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.7;
+}
+img {
+  max-width: 100%;
+}
+.content {
+  max-width: 1200px;
+  padding: 0 5%;
+  margin: 0 auto;
+}
+.section-title {
+  font-size: 1.5rem;
+}
+#btn {
+  border: 1px solid #24292E;
+  font-size: 0.75rem;
+  display: inline-block;
+  padding: 15px 37px;
+  margin-top: 20px;
+}
+li {
+  list-style: none;
+}
+/* ヘッダー */
+#header {
+  background-image: url(img/mainvisual.jpg);
+  height: 100vh;
+  position: relative;
+  margin-bottom: 80px;
+}
+#sitelogo {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+/* newspaper */
+#newspaper {
+  text-align: center;
+  margin-bottom: 80px;
+}
+#newspaper .flexitem {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+#newspaper .flexitem .item {
+  width: 49%;
+  position: relative;
+}
+#newspaper .flexitem .item .text {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 15px 0;
+  max-width: 290px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  font-weight: bold;
+}
+#newspaper .flexitem .item .text .subtitle {
+  margin-top: 0;
+  margin-bottom: 2px;
+  font-size: 1.25rem;
+}
+#newspaper .flexitem .item .text p {
+  margin: 0;
+}
+/* Fashion */
+#fashion {
+  text-align: center;
+  background-image: url(img/fashion.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding-top: 60px;
+  margin-bottom: 80px;
+  height: 520px;
+}
+/* Catalog & Antique */
+.catalog {
+  background-color: #F5F5F5;
+  padding: 60px 0;
+}
+.catalog .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.catalog .photo {
+  width: 48%;
+  text-align: center;
+}
+.catalog .photo img {
+  width: 100%;
+}
+.catalog .explanation {
+  width: 48%;
+  text-align: center;
+}
+.catalog .explanation .section-title {
+  margin-bottom: 40px;
+}
+.catalog .explanation p {
+  text-align: left;
+  margin-bottom: 30px;
+}
+/* footer */
+#footer {
+  background-color: #333333;
+  font-size: 0.75rem;
+}
+#footer .content {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  padding: 100px 54px;
+}
+#footer .footersection {
+  width: 33%;
+  line-height: 2;
+}
+#footer .footersection img {
+  padding: 60px 0;
+}
+#footer .footersection .footertitle {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+#footer .footersection li::before {
+  content: "-";
+  margin-right: 5px;
+}
+#footer .footersection ul {
+  padding: 0;
+  margin: 0;
+}
+
+#footer #copyright {
+text-align: center;
+background-color: #fff;
+padding: 30px 0;
+}
+
+/* スマホ */
+@media screen and (max-width: 896px) {
+  /* newspaper */
+  #newspaper .flexitem {
+    flex-direction: column;
+  }
+  #newspaper .flexitem .item {
+    width: 100%;
+  }
+  #newspaper .flexitem .item:first-child {
+    margin-bottom: 30px;
+  }  
+  #fashion {
+    padding-top: 35px;
+    margin-bottom: 50px;
+    height: 540px;
+  }
+.catalog {
+  padding-top: 30px;
+}
+.catalog .content {
+  flex-direction: column;
+}
+.catalog .content .photo{
+  width: 100%;
+}
+.catalog .content .explanation{
+  width: 100%;
+}
+.catalog .content .photo:first-child {
+  margin-bottom:60px;
+}
+.catalog .content #btn {
+  margin-bottom:30px;
+}
+/* フッター */
+#footer .content {
+  flex-direction: column;
+  padding: 30px 20px;
+}
+#footer .footersection {
+  width: 100%;
+  margin-bottom: 30px;
+
+}
+#footer .footersection:first-child {
+  text-align: center;
+  padding: 0;
+}
+}
